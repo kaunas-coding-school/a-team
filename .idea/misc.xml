@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="true" assert-keyword="false" jdk-15="false">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+=======
   <component name="ProjectRootManager" version="2" default="true">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
@@ -19,4 +24,5 @@
       </state>
     </states>
   </component>
+>>>>>>> origin/master
 </project>
