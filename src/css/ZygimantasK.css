@@ -1,13 +1,16 @@
-*{
+body{
     font-family: Calibri;
 }
 
 
 
-h1{
+h1 {
+    text-align: center;
 font-family: Calibri;
     font-weight: 500;
+    color: #003345;
 }
+
 
 a:link{
     text-decoration:none;
@@ -26,9 +29,11 @@ a:hover{
 
 img{
     height: 200px;
+    padding: 30px 30px;
 }
 
 .listas{
-    display: inline;
+    text-decoration:underline;
+    text-decoration-color: seagreen;
 
 }
