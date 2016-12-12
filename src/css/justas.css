@@ -7,10 +7,10 @@ body {
     text-align:center;
 }
 h1 {
-    text-align:center;
+    text-align:right;
     color: #339103;
 }
-.heading1 {
+p1{
     text-align:right;
     color: red;
 }
