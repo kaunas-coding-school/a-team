@@ -39,5 +39,43 @@ p {
     margin-bottom: 200px;
     margin-right: 20px;
     margin-left: 20px;
+    transition: font-family 1s, color 1s;
 
+}
+.link:hover{
+    text-decoration: none;
+    font-family: 'Baskerville';
+    color: red;
+}
+ul {
+    list-style: none;
+    background-color: #003345;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 36px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 15px 5px black;
+}
+
+li {
+    float: left;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: #3485ff;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.wraper {
+    margin: 50px 10px 100px;
+}
+.main{
+    padding-top: 20px;
 }
