@@ -10,10 +10,9 @@ h1 {
     text-align:center;
     color: #339103;
 }
-.antraste{
-    text-align:center;
-    color: black;
-    height:29px;
+.heading1 {
+    text-align:right;
+    color: red;
 }
 p {
     font-family: 'Baskerville';
