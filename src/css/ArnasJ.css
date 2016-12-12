@@ -1,16 +1,22 @@
-.mybody {
+body {
     background-color: beige;
-    font-family: "Segoe UI";
-    margin: 50px 10px 10px 10px;
+}
+
+.mywrapper {
+    margin: 50px 100px 10px 100px;
 }
 
 h1 {
+    font-family: "Segoe UI";
     color: #7a7a7a;
     font-weight: normal;
     text-align: center;
 }
 
 p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "Segoe UI";
     color: #690f0f;
     font-size: larger;
     text-align: justify;
