@@ -3,6 +3,9 @@ body {
     font-family: 'courier';
     color: #FFFFFF
 }
+.heading {
+    text-align:center
+}
 h1 {
     color: blue;
 }
