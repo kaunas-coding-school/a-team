@@ -1,0 +1,16 @@
+body {
+    background-color: darkorange ;
+}
+h1 {
+    color: darkslateblue;
+}
+p {
+    color: cornsilk;
+}
+.logo {
+    height: 150px;
+    width: 200px;
+}
+h2{
+    font-family: Verdana;
+}
