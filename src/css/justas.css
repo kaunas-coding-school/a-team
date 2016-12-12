@@ -1,0 +1,28 @@
+body {
+    background-color: #F1FF99;
+    font-family: 'courier';
+    color: #FFFFFF
+}
+.heading {
+    text-align:center;
+}
+h1 {
+    text-align:center;
+    color: #339103;
+}
+p {
+    font-family: 'Baskerville';
+    color: #000000;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.lektuvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+    height:250px;
+}
