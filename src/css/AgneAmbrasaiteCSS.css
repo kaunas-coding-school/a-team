@@ -1,14 +1,51 @@
-.pavadinimas{
+.pavadinimas {
     text-align: right;
     font-family: Century;
     text-emphasis-color: aqua;
 }
-.eilerastis{
+
+.eilerastis {
     color: green;
     text-align: center;
 }
-.grincas{
-  /*  width:500px;*/
+
+.grincas {
+    /*  width:500px;*/
     height: 500px;
-    align-items: center;
+
+}
+
+.google {
+    width: 100px;
+}
+
+.klausimas {
+    font-family: Corbel;
+    font-size: x-large;
+}
+
+ul {
+    list-style: NONE;
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    height: 36px;
+
+}
+
+li {
+    float: left;
+margin:10px ;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+
+}
+.wrapper {
+    margin: 50px 10px 100px;
 }
