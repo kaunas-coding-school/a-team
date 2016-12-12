@@ -3,7 +3,7 @@ body {
 }
 
 .mywrapper {
-    margin: 50px 10px 10px 10px;
+    margin: 50px 100px 10px 100px;
 }
 
 h1 {
@@ -14,6 +14,8 @@ h1 {
 }
 
 p {
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: "Segoe UI";
     color: #690f0f;
     font-size: larger;
