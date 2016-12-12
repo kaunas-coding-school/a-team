@@ -1,0 +1,14 @@
+body {
+    background-color: beige;
+    font-family: "Segoe UI";
+}
+h1 {
+    color: #7a7a7a;
+    font-weight: normal;
+    text-align: center;
+}
+p {
+    color: #690f0f;
+    font-size: larger;
+    text-align: justify;
+}

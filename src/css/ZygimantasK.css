@@ -1,0 +1,49 @@
+body{
+    min-height: 100%;
+    font-family: Calibri;
+    background:rgba(0,0,0,0) url(https://s.yimg.com/ny/api/res/1.2/xtir6DeaG5IqpquWRGt6fA--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/digital_trends_973/52a5e65852832306c7f61765b6149a71) no-repeat 0, 0;
+    background-color:rgba(0,0,0, 0.5);
+    background-size:cover;
+    position: fixed;
+}
+
+p{
+    font-size: 130%;
+    color: rebeccapurple;
+}
+
+
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+font-family: Calibri;
+    font-weight: 500;
+    color: #003345;
+}
+
+
+a:link{
+    text-decoration:none;
+    font-size: 100%;
+    color: #3485ff;
+    transition: font-weight 0.5s, color 0.5s, font-size 0.5s;
+}
+
+a:hover{
+    font-weight: 200;
+    color: chartreuse;
+    font-size: 200%;
+
+}
+
+img{
+    height: 200px;
+    padding: 30px 30px;
+}
+
+.listas{
+    text-decoration:underline;
+    text-decoration-color: seagreen;
+
+}
