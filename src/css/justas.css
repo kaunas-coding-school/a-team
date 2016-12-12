@@ -10,9 +10,9 @@ h1 {
     text-align:right;
     color: #339103;
 }
-p1{
-    text-align:right;
-    color: red;
+.heading1{
+    text-align:center;
+    color: black;
 }
 p {
     font-family: 'Baskerville';
@@ -30,4 +30,14 @@ p {
     width:300px;
     height:250px;
     border:20px white;
+}
+.link{
+    text-decoration: none;
+    font-family: 'Times New Roman';
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+
 }
