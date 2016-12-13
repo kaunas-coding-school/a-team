@@ -7,3 +7,24 @@
     padding: 10px;
     float: right;
 }
+
+li:hover {
+    transition: background-color 0.5s;
+    background-color: deepskyblue;
+}
+
+.right_side, .left_side{
+    float: left;
+    width: 50%;
+}
+
+.left_side {
+    background-color: #F1FF99;
+}
+.right_side {
+    background-color: #ffd284;
+}
+.test {
+    width: 50%;
+    background-color: #3485ff;
+}
