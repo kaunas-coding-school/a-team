@@ -30,14 +30,36 @@ a.button {
     text-decoration: none;
     color: initial;
 }
-.left_side, .right_side{
+
+.left_side, .right_side {
     float: left;
     width: 50%;
 
 }
-.left_side{
+
+.left_side {
     background-color: darkkhaki;
 }
-.right_side{
+
+.right_side {
     background-color: darkslategrey;
+}
+
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+
+}
+
+input[type=text]:focus {
+    background-color: orangered;
+}
+input[type=submit] {
+    background-color: ButtonShadow;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
