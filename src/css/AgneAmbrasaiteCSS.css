@@ -1,51 +1,48 @@
 .pavadinimas {
     text-align: right;
-    font-family: Century;
     text-emphasis-color: aqua;
-}
-
-.eilerastis {
-    color: green;
-    text-align: center;
-}
-
-.grincas {
-    /*  width:500px;*/
-    height: 500px;
-
-}
-
-.google {
-    width: 100px;
-}
-
-.klausimas {
-    font-family: Corbel;
-    font-size: x-large;
-}
-
-ul {
-    list-style: NONE;
+    padding-top: 45px;
     background-color: black;
+    color: white;
+
+
+}
+body {
+    background-color: white;
+    font-family: "Arial";
+}
+.eilerastis {
+    color: darkblue;
+    text-align: center;
+    font-size: larger;
+    background-color: white   ;
+    border: none;
+}
+ul {
+    list-style: none;
+    background-color: #003345;
     width: 100%;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    height: 40px;
     position: fixed;
     top: 0;
-    height: 36px;
-
 }
-
 li {
     float: left;
-margin:10px ;
-}
+    padding:10px ;
 
+}
+li:hover {
+    background-color: lightblue;
+}
 li a {
     text-decoration: none;
     color: white;
-
 }
-.wrapper {
-    margin: 50px 10px 100px;
+.forma{
+   margin:  2%;
+}
+.row   {
+
 }
