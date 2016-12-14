@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Pavadinimas</title>
+    <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/justas.css">
-    <!--<link rel="stylesheet" href="src/css/main.css">-->
+
     <ul>
         <li><a href="index.html" title="">PRADZIA</a></li>
         <li><a href="AgneAmbrasaite.html" title="">Agne</a></li>
@@ -22,11 +23,20 @@
     <h1
             class="heading"> Justo puslapis
     </h1>
-</div>
-<h2 class="heading1"> The very first web page</h2>
-<img class="lektuvas" alt="lektuvas"
-     src="http://cdn.airplane-pictures.net/images/uploaded-images/2015/5/10/560195.jpg"/>
-<p>
+    <form action="action_page.php">
+        First name:<br>
+        <input type="text" name="firstname"><br>
+        Last name:<br>
+        <input type="text" name="lastname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2 class="heading1"> The very first web page</h2>
+    <img class="lektuvas" alt="lektuvas"
+         src="http://cdn.airplane-pictures.net/images/uploaded-images/2015/5/10/560195.jpg"/>
+    <center>
+        <button type="button" onclick="alert('PLANE!')">Click Me!</button>
+    </center>
+    <p>
 
         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
         texts.
@@ -64,11 +74,34 @@
         She packed her seven versalia, put her initial into the belt and made herself on the way.
         When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her
         hometown Bookmarksgrove, the headline of Alphabet Village and the subline.
-</p>
-<hr>
-<center><a style="text-align:center;"  href="www.google.lt">Nuoroda i tinklalapi</a></center>
-<br/>
-<center><a class="link" href=" zygis.html">VISIT PAGE</a></center>
-
+    </p>
+    <div class="test">
+        <div class="kaire">
+            <form class="selection" action="action_page.php">
+                <input type="text" placeholder="Insert country">
+                <br>
+                <select name="City">
+                    <option value="Choose city">Choose city</option>
+                    <option value="Kaunas">Kaunas</option>
+                    <option value="Vilnius">Vilnius</option>
+                    <option value="Klaipeda">Klaipeda</option>
+                    <option value="Moletai">Moletai</option>
+                </select>
+                <br><br>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="desine">
+            <form>
+                <textarea name="Irasykite savo teksta" rows="20" cols="50">Your text</textarea>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <center><a style="text-align:center;" href="www.google.lt">Nuoroda i tinklalapi</a></center>
+    <br/>
+    <center><a class="link" href=" zygis.html">VISIT PAGE</a></center>
+</div>
 </body>
 </html>

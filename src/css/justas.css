@@ -1,11 +1,5 @@
-body {
-    background-color: #F1FF99;
-    font-family: 'courier';
-    color: #FFFFFF;
-    heigth: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+body{
+    background: #F1FF99;
 }
 .heading {
     text-align:center;
@@ -21,7 +15,7 @@ h1 {
 p {
     font-family: 'Baskerville';
     color: #000000;
-    border: 1px solid black;
+    border: 5px solid black;
     margin-top: 20px;
     margin-bottom: 200px;
     margin-right: 200px;
@@ -52,35 +46,30 @@ p {
     font-family: 'Baskerville';
     color: red;
 }
-ul {
-    list-style: none;
-    background-color: #003345;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    height: 36px;
-    position: fixed;
-    top: 0;
-    box-shadow: 0 0 15px 5px black;
-}
 
-li {
-    float: left;
-    padding: 10px;
-}
 
 li:hover {
-    background-color: #3485ff;
+    background-color: #3990ff;
 }
 
 li a {
     text-decoration: none;
     color: white;
 }
-
-.wraper {
-    margin: 50px 10px 100px;
-}
 .main{
     padding-top: 20px;
+}
+.selection{
+    margin-bottom: 100px;
+    margin-top: 1px;
+}
+.kaire{
+    float: left;
+}
+.desine{
+    float: right;
+}
+.test{
+    height: 350px;
+    padding: 230px;
 }
