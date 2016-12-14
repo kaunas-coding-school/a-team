@@ -7,6 +7,10 @@ body {
     background-size: cover;
     position: relative;
 }
+.pagrindinis{
+    margin-top: 50px;
+    width: 100%;
+}
 
 .paragrafas {
     margin-left: auto;
@@ -15,7 +19,6 @@ body {
     font-size: 120%;
     color: azure;
     max-width: 100ch;
-
 }
 
 h1 {
@@ -43,6 +46,7 @@ h1 {
 .w3 {
     margin: 0 auto;
     text-align: center;
+
 }
 
 .left, right {
@@ -59,44 +63,43 @@ h1 {
 }
 
 .imegas img {
-    height: 200px;
-    transition: height 0.5s;
+
+    width: 25%;
+    transition: width 0.5s;
+    margin-bottom: 15px;
 }
 
 .imegas img:hover {
-    height: 250px;
+    width: 30%;
+    min-width: 100px;
 }
 
 .second {
     color: azure;
-    height: 550px;
+    height: 430px;
     width: 100%;
+    position: relative;
 }
 
 .one {
     margin-top: 15px;
-    width: 40%;
+    width: 95%;
     float: left;
     text-align: center;
-    height: 550px;
+    /*height: 550px;*/
 }
 
 .two {
     margin-top: 15px;
-    width: 40%;
+    width: 95%;
     float: right;
     text-align: center;
-    height: 550px;
-}
-
-.islenda {
-    background-color: #7a7a7a;
-    z-index: 0;
+    /*height: 550px;*/
 }
 
 .form {
     color: azure;
-    /*margin: 500px 50px; !*kazkodel forma atsiranda ant kito div'o kol kas nesugalvojau kaip sutvarkyt, tik su margin'*!*/
+
 }
 
 .question {
@@ -104,6 +107,19 @@ h1 {
 }
 
 
+.grido_bandymas{
+    text-align: center;
+    max-width: 150ch;
+    margin: 0 auto;
+    width: 100%;
+}
 
+.grido_bandymas img{
+    width: 50%;
+}
+
+.text-area{
+    color: black;
+}
 
 
