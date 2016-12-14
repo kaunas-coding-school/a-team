@@ -6,10 +6,12 @@ body {
 
 h1 {
     color: snow;
+    align-content: space-around;
 }
 
 p {
     color: cornsilk;
+
 
 }
 
@@ -20,7 +22,7 @@ h2 {
 
 bdo {
     font-size: 150%;
-    font-style: oblique;
+    font-style: inherit;
 }
 
 a.button {
@@ -31,11 +33,9 @@ a.button {
     color: initial;
 }
 
-.left_side, .right_side {
-    float: left;
-    width: 50%;
 
-}
+
+
 
 .left_side {
     background-color: darkkhaki;
@@ -46,14 +46,15 @@ a.button {
 }
 
 input[type=text] {
-    border: 2px solid red;
+    border: 2px solid black;
     border-radius: 4px;
 
 }
 
 input[type=text]:focus {
-    background-color: orangered;
+    background-color: wheat;
 }
+
 input[type=submit] {
     background-color: ButtonShadow;
     border: none;
