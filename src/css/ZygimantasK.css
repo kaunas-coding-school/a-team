@@ -1,54 +1,111 @@
-
-
-
-body{
+body {
     min-height: 100%;
     font-family: Calibri;
-
-
-}
-.pradzia{
     width: 100%;
-    height:100%;
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s.yimg.com/ny/api/res/1.2/xtir6DeaG5IqpquWRGt6fA--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/digital_trends_973/52a5e65852832306c7f61765b6149a71) no-repeat;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s.yimg.com/ny/api/res/1.2/xtir6DeaG5IqpquWRGt6fA--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/digital_trends_973/52a5e65852832306c7f61765b6149a71) no-repeat;
     background-size: cover;
     position: relative;
-
 }
 
-p{
-    font-size: 120%;
-    color: #7a7a7a;
-    max-width: 100ch;
+.paragrafas {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    margin-top:0;
-    margin-left:20%;
-    margin-bottom:0;
-    margin-right:20%;
-}
+    font-size: 120%;
+    color: azure;
+    max-width: 100ch;
 
+}
 
 h1 {
     font-size: 60px;
     text-align: center;
-font-family: Calibri;
+    font-family: Calibri;
     font-weight: 500;
     color: #3485ff;
 }
 
-
-.w3:link{
-    text-decoration:none;
+.w3:link {
+    text-decoration: none;
     font-size: 100%;
-    color: #3485ff;
+    color: azure;
     transition: font-weight 0.5s, color 0.5s, font-size 0.5s;
+    margin: 0 auto;
 }
 
-.w3:hover{
+.w3:hover {
     font-weight: 200;
     color: chartreuse;
     font-size: 200%;
+}
+
+.w3 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.left, right {
+    float: left;
+    width: 50%;
+}
+
+.left {
+    background-color: #690f0f;
+}
+
+.right {
+    background-color: #339103;
+}
+
+.imegas img {
+    height: 200px;
+    transition: height 0.5s;
+}
+
+.imegas img:hover {
+    height: 250px;
+}
+
+.second {
+    color: azure;
+    height: 550px;
+    width: 100%;
 
 }
+
+.one {
+    margin-top: 15px;
+    width: 40%;
+    float: left;
+    text-align: center;
+    height: 550px;
+}
+
+.two {
+    margin-top: 15px;
+    width: 40%;
+    float: right;
+    text-align: center;
+    height: 550px;
+}
+
+.islenda {
+    background-color: #7a7a7a;
+    z-index: 0;
+}
+
+.form {
+    color: azure;
+    /*margin: 500px 50px; !*kazkodel forma atsiranda ant kito div'o kol kas nesugalvojau kaip sutvarkyt, tik su margin'*!*/
+
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+
+
 
 
