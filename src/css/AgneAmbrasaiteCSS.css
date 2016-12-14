@@ -18,7 +18,7 @@ body {
     background-color: white   ;
     border: none;
 }
-ul {
+.meniu {
     list-style: none;
     background-color: #003345;
     width: 100%;
@@ -27,6 +27,7 @@ ul {
     height: 40px;
     position: fixed;
     top: 0;
+    z-index: 9999;
 }
 li {
     float: left;
@@ -44,5 +45,11 @@ li a {
    margin:  2%;
 }
 .row   {
-
+    text-align: justify;
+}
+.paveikslelis{
+    width: 100%;
+}
+.grincas  {
+    width: 100%;
 }

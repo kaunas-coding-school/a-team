@@ -1,35 +1,44 @@
-body{
+body {
     background: #F1FF99;
 }
+
 .heading {
-    text-align:center;
+    font-size: 65px;
+    color: #003345;
+    text-align: left;
+    margin-top: 75px;
+    margin-left: 45px;
+
+    font-family: Courier, cursive;
+    font-weight: normal;
+    padding-top: 60px;
 }
+
 h1 {
-    text-align:right;
+    text-align: right;
     color: #339103;
 }
-.heading1{
-    text-align:center;
+
+.heading1 {
+    text-align: center;
     color: black;
 }
+
 p {
     font-family: 'Baskerville';
     color: #000000;
-    border: 5px solid black;
-    margin-top: 20px;
-    margin-bottom: 200px;
-    margin-right: 200px;
-    margin-left: 200px;
 }
+
 .lektuvas {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:300px;
-    height:250px;
-    border:20px white;
+    width: 300px;
+    height: 250px;
+    border: 20px white;
 }
-.link{
+
+.link {
     text-decoration: none;
     font-family: 'Times New Roman';
     border: 1px solid black;
@@ -39,14 +48,13 @@ p {
     margin-left: 20px;
     transition: font-family 1s, color 1s;
 
-
 }
-.link:hover{
+
+.link:hover {
     text-decoration: none;
     font-family: 'Baskerville';
     color: red;
 }
-
 
 li:hover {
     background-color: #3990ff;
@@ -56,20 +64,39 @@ li a {
     text-decoration: none;
     color: white;
 }
-.main{
+
+.main {
     padding-top: 20px;
 }
-.selection{
+
+.selection {
     margin-bottom: 100px;
     margin-top: 1px;
 }
-.kaire{
-    float: left;
+
 }
-.desine{
+.desine {
     float: right;
+    height: 120px;
 }
-.test{
-    height: 350px;
-    padding: 230px;
+
+.test {
+    float: right;
+    height: 500px;
+    margin-top: 500px;
+    margin-left: 100px;
+    margin-right: 40px;
+}
+
+.row {
+    padding: 35px;
+}
+
+.btn-group {
+    padding: 50px;
+}
+
+.footer {
+    margin-top: 700px;
+    padding: 100px;
 }
