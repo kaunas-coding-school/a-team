@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="App">
 <head>
     <title>Puslapis</title>
     <meta name="viewport" content="width=device-width inital-scale=1.0">
@@ -26,7 +26,7 @@
 
 </head>
 <body>
-<div class="pagrindinisZK">
+<div class="pagrindinisZK" ng-controller="ZygimantasKatkevicius as zk">
 
     <nav>
         <ul>
@@ -41,7 +41,8 @@
         </ul>
     </nav>
 
-    <h1 title="Cia yra 'h1' tag'as">Kas kaip moka, tas taip koduoja</h1>
+    <h1 title="Cia yra 'h1' tag'as">Kas kaip moka, tas taip koduoja {{zk.kintamasis}}</h1>
+    <span ng-bind="zk.vardas">fvfdvdfvfv</span>
     <div class="paragrafas">
         <div class="row">
             <div class="col-xs-12">
@@ -152,12 +153,12 @@
             <input type="radio" name="select" , value="UX" checked>Kas tas ux?<br/>
         </form>
 
-        <form action="/servlet" method="post">
-            Vardas:{{vardas}}<br/>
-            <input ng-model="vardas" type="text" id = "vardas" name="vardas" value=""><br>
-            Pavarde:{{pavarde}}<br/>
-            <input ng-model="pavarde" type="text" name="pavarde" value=""><br>
-            <input type="submit" value="Submit">
+        <form action="/servlet" method="post" class="vardasPavarde">
+            Vardas:{{zk.vardas}}<br/>
+            <input ng-model="zk.vardas" type="text" id = "vardas" name="vardas" value=""><br>
+            Pavarde:{{zk.pavarde}}<br/>
+            <input ng-model="zk.pavarde" type="text" name="pavarde" value=""><br>
+            <input type="submit" value="Submit" id="but">
         </form>
 
 
@@ -221,7 +222,7 @@
             </div>
 
             <div class="col-md-12">
-            <a href="https://www.youtube.com/" type="button" class="btn btn-default btn-lg btn-block">Išeiti</a>
+            <a href="https://www.youtube.com/" type="button" target="blank" class="btn btn-default btn-lg btn-block">Išeiti</a>
             </div>
 
         </div>
