@@ -3,9 +3,15 @@ body {
     font-family: Calibri;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s.yimg.com/ny/api/res/1.2/xtir6DeaG5IqpquWRGt6fA--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/digital_trends_973/52a5e65852832306c7f61765b6149a71) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.grouponcdn.com/deal/5EXVDNMDEe1mtyEK6Pgp/ZC-1057x634/v1/c700x420.jpg) no-repeat;
     background-size: cover;
     position: relative;
+    background-position: center;
+}
+
+.pagrindinis {
+    margin-top: 50px;
+    width: 100%;
 }
 
 .paragrafas {
@@ -15,6 +21,7 @@ body {
     font-size: 120%;
     color: azure;
     max-width: 100ch;
+    position: relative;
 
 }
 
@@ -24,6 +31,12 @@ h1 {
     font-family: Calibri;
     font-weight: 500;
     color: #3485ff;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid azure;
+    border-radius: 25px;
+    width:37%;
 }
 
 .w3:link {
@@ -43,6 +56,8 @@ h1 {
 .w3 {
     margin: 0 auto;
     text-align: center;
+
+
 }
 
 .left, right {
@@ -59,51 +74,72 @@ h1 {
 }
 
 .imegas img {
-    height: 200px;
-    transition: height 0.5s;
+
+    width: 25%;
+    transition: width 0.5s;
+    margin-bottom: 15px;
+    min-width: 100px;
 }
 
 .imegas img:hover {
-    height: 250px;
+    width: 30%;
 }
 
 .second {
     color: azure;
-    height: 550px;
+    height: 430px;
     width: 100%;
+    position: relative;
 }
 
 .one {
     margin-top: 15px;
-    width: 40%;
+    width: 95%;
     float: left;
     text-align: center;
-    height: 550px;
+    /*height: 550px;*/
 }
 
 .two {
     margin-top: 15px;
-    width: 40%;
+    width: 95%;
     float: right;
     text-align: center;
-    height: 550px;
-}
-
-.islenda {
-    background-color: #7a7a7a;
-    z-index: 0;
+    /*height: 550px;*/
 }
 
 .form {
     color: azure;
-    /*margin: 500px 50px; !*kazkodel forma atsiranda ant kito div'o kol kas nesugalvojau kaip sutvarkyt, tik su margin'*!*/
+
 }
 
 .question {
     margin-bottom: 20px;
 }
 
+.grido_bandymas {
+    text-align: center;
+    max-width: 150ch;
+    margin: 0 auto;
+    width: 100%;
+    color: azure;
+}
 
+.grido_bandymas p {
+    margin-top: 10px;
+}
 
+.grido_bandymas img {
+    width: 50%;
+
+}
+
+.text-area {
+    color: black;
+}
+
+.headagain {
+    margin-bottom: 30px;
+}
 
 

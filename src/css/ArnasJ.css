@@ -3,7 +3,7 @@ body {
 }
 
 .mywrapper {
-    margin: 50px 100px 10px 100px;
+    margin: 75px 100px 10px 100px;
 }
 
 h1 {
@@ -22,26 +22,24 @@ p {
     text-align: justify;
 }
 
-.leftSide, .rightSide {
-    float: left;
-    width: 50%;
-    text-align: right;
-
-}
-
-.leftSide {
-    background-color: #690f0f;
-    color: #7a7a7a;
-
-}
-
-.rightSide {
+.footer {
+    text-align: center;
     background-color: #7a7a7a;
+
 }
 
 .myLogin {
     float: right;
+    padding-bottom: 0px;
 }
-.myLogin:hover{
+
+.myLogin:hover {
     background-color: transparent;
+}
+
+.login1 {
+    max-height: 30px;
+}
+.backcolor{
+    background-color: #9c9c9c;
 }
