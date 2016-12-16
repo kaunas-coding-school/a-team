@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app>
 <head>
+    <title>Puslapis</title>
     <meta name="viewport" content="width=device-width inital-scale=1.0">
     <meta charset="UTF-8">
 
@@ -17,7 +18,12 @@
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/ZygimantasK.css">
 
-    <title>Puslapis</title>
+
+    <script src="src\js\angular.min.js" type="application/javascript"></script>
+    <script src="src/js/zkjs.js"></script>
+
+
+
 </head>
 <body>
 <div class="pagrindinis">
@@ -146,6 +152,14 @@
             <input type="radio" name="select" , value="UX" checked>Kas tas ux?<br/>
         </form>
 
+        <form action="/servlet" method="post">
+            Vardas:{{vardas}}<br/>
+            <input ng-model="vardas" type="text" id = "vardas" name="vardas" value=""><br>
+            Pavarde:{{pavarde}}<br/>
+            <input ng-model="pavarde" type="text" name="pavarde" value=""><br>
+            <input type="submit" value="Submit">
+        </form>
+
 
         <form class="text-area">
                     <textarea  id="pakeist" name="about me" rows="10" cols="50"
@@ -241,7 +255,7 @@
         alert('VISISKAI NIEKO!');
     });
 
-   
+
 </script>
 
 </body>

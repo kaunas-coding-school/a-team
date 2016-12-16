@@ -110,7 +110,10 @@ h1 {
 
 .form {
     color: azure;
+}
 
+form input{
+    color:black;
 }
 
 .question {
@@ -143,3 +146,6 @@ h1 {
 }
 
 
+ul{
+    z-index: 5;
+}
