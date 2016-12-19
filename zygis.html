@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="App">
 <head>
+    <title>Puslapis</title>
     <meta name="viewport" content="width=device-width inital-scale=1.0">
     <meta charset="UTF-8">
 
@@ -17,10 +18,15 @@
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/ZygimantasK.css">
 
-    <title>Puslapis</title>
+
+    <script src="src\js\angular.min.js" type="application/javascript"></script>
+    <script src="src/js/zkjs.js"></script>
+
+
+
 </head>
 <body>
-<div class="pagrindinis">
+<div class="pagrindinisZK" ng-controller="ZygimantasKatkevicius as zk">
 
     <nav>
         <ul>
@@ -35,7 +41,8 @@
         </ul>
     </nav>
 
-    <h1 title="Cia yra 'h1' tag'as">Kas kaip moka, tas taip koduoja</h1>
+    <h1 title="Cia yra 'h1' tag'as">Kas kaip moka, tas taip koduoja {{zk.kintamasis}}</h1>
+    <span ng-bind="zk.vardas">fvfdvdfvfv</span>
     <div class="paragrafas">
         <div class="row">
             <div class="col-xs-12">
@@ -146,6 +153,14 @@
             <input type="radio" name="select" , value="UX" checked>Kas tas ux?<br/>
         </form>
 
+        <form action="/servlet" method="post" class="vardasPavarde">
+            Vardas:{{zk.vardas}}<br/>
+            <input ng-model="zk.vardas" type="text" id = "vardas" name="vardas" value=""><br>
+            Pavarde:{{zk.pavarde}}<br/>
+            <input ng-model="zk.pavarde" type="text" name="pavarde" value=""><br>
+            <input type="submit" value="Submit" id="but">
+        </form>
+
 
         <form class="text-area">
                     <textarea  id="pakeist" name="about me" rows="10" cols="50"
@@ -207,14 +222,14 @@
             </div>
 
             <div class="col-md-12">
-            <button id="exit" type="button" class="btn btn-default btn-lg btn-block">Išeiti</button>
+            <a href="https://www.youtube.com/" type="button" target="blank" class="btn btn-default btn-lg btn-block">Išeiti</a>
             </div>
 
         </div>
     </div>
 
 
-</div>
+
 
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -241,8 +256,12 @@
         alert('VISISKAI NIEKO!');
     });
 
-   
+
 </script>
+
+
+</div>
+
 
 </body>
 </html>
