@@ -1,7 +1,9 @@
 /**
  * Created by HP on 2016.12.16.
  */
-angular.module('App', []).controller('DeividasPetkevicius', function () {
+
+
+app.controller('DeividasPetkevicius', function () {
     var dp = this;
 
     dp.kintamasis = "VARDAS";
