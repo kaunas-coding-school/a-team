@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="musuAplikacija">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pirmas puslapis</title>
@@ -10,162 +10,20 @@
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <link rel="stylesheet" href="src/css/main.css"/>
-    <link rel="stylesheet" href="src/css/tautvydas.css"/>
+    <link rel="stylesheet" href="src/css/tautvydas.css" type="text/css"/>
 
 </head>
-<body>
-<nav>
-    <ul>
-        <li><a href="index.html" title="">PRADZIA</a></li>
-        <li><a href="AgneAmbrasaite.html" title="">Agne</a></li>
-        <li><a href="Arnas.html" title="">Arnas</a></li>
-        <li><a href="ArnasJ.html" title="">ArnasJ</a></li>
-        <li><a href="DeividasPetkevicius.html" title="">DeividasP2</a></li>
-        <li><a href="justas.html" title="">Justas</a></li>
-        <li><a href="LukasGudonis.html" title="">Lukas</a></li>
-        <li><a href="zygis.html" title="">Zygimantas</a></li>
-    </ul>
-</nav>
+<body ng-cloak>
 
-<div class="tautv container">
-    <h1>Musu puslapis</h1>
+<ng-view></ng-view>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="row">
-                <div class="col-xs-12">
-                    <a href="#" class="thumbnail">
-                        <img src="src/img/google-logo-1200x630.jpg"
-                             id="foto"
-                             alt="G logo"
-                             class="">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-offset-3">
-            <div class="row row1">
-                <div class="col-xs-12 col-sm-12 col-md-6">
-                    <form action="/servlet" method="post">
-                        Vardas:<br>
-                        <input type="text" id = "vardas" name="vardas" value=""><br>
-                        Pavarde:<br>
-                        <input type="text" name="pavarde" value=""><br><br>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-                <p class="col-xs-12 col-sm-12 col-md-6">
-                    nisi sit amet pretium. Vivamus auctor orci quis neque gravida lobortis. Quisque varius libero ex,
-                    vitae volutpat
-                    magna tristique et. Nam sit amet malesuada ante. Quisque dignissim, nisi eu convallis pharetra, nunc
-                    tellus
-                    rutrum
-                    augue, nec tristique felis mi dignissim justo. Fusce et est orci.
-                </p>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum ullamcorper mollis. Vestibulum porttitor
-            vitae
-            <div class="row">
-                <div class="col-xs-12 col-sm-6  col-sm-offset-3 col-md-3 col-md-offset-6">
-                    <a href="#" class="thumbnail">
-                        <img src="src/img/google-logo-1200x630.jpg"
-                             alt="G logo"
-                             class="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+<script src="src/js/angular.min.js" type="application/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 
-    <div class="row">
-        <div class="col-xs-12 col-md-6">
-            <p>
-                Quisque in augue nec sapien dictum pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices
-                posuere cubilia Curae; In suscipit egestas libero. Fusce sit amet porta mauris, ornare auctor magna.
-                Etiam
-                ac
-                libero
-                at ex varius condimentum sed sed eros. Phasellus lobortis nisi quis enim vestibulum pharetra sed eget
-                neque.
-                Nulla
-                tempus lacus nec est fermentum, sit amet porta ante hendrerit. Ut vestibulum, ex lacinia suscipit
-                iaculis,
-                mauris
-                eros dictum urna, eu feugiat ante arcu ut sem. Donec elementum est sed metus pretium lobortis.
-                Vestibulum ut
-                odio et
-                elit interdum consequat. Aliquam turpis est, semper vitae elit laoreet, lobortis gravida arcu. Morbi
-                eget
-                condimentum nisi, eu tempus libero. Vivamus arcu lectus, consectetur quis iaculis quis, rhoncus eget
-                lorem.
-                Etiam
-                laoreet libero at enim semper pretium. Donec ut velit tincidunt, feugiat velit id, consectetur ante.
-            </p>
-        </div>
-        <div class="col-xs-12 col-md-6">
-            <p>
-                Morbi vel tortor eget lectus ullamcorper molestie. Curabitur urna velit, sagittis at imperdiet nec,
-                vulputate
-                non
-                lacus. Aliquam congue convallis lorem, at varius neque convallis non. Ut in pretium sem. Phasellus
-                consequat
-                blandit
-                tortor, in dictum tortor molestie in. Aenean vitae malesuada velit, eu tincidunt nibh. Morbi turpis
-                urna,
-                gravida
-                non lobortis sed, rutrum a dui. Vivamus vehicula lorem sapien, vel pharetra lacus varius id. Ut congue,
-                elit
-                sed
-                consectetur venenatis, odio justo ornare eros, eu dignissim mi justo ut urna. Integer viverra, ante et
-                blandit
-                egestas, odio ipsum eleifend mi, ac tincidunt velit nisi in ipsum.
-            </p>
-
-        </div>
-        <div class="col-xs-12 col-md-6 col-md-offset-3">
-            <iframe src="http://www.kaunascoding.lt" class="freimas"></iframe>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12 col-md-12">
-            <div class="wraper">
-                <div class="left_side">
-                    Kaire puse<br/>
-                    Kaire puse<br/>
-                    Kaire puse<br/>
-                    Kaire puse<br/>
-                    <div class="test">...................</div>
-                </div>
-                <div class="right_side">
-                    Desine puse
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-    </div>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-
-<script>
-    $('.row1').click(function(){
-            $('#vardas').val('Tautvydas');
-//        $(this).css('display','none');
-    });
-</script>
+<script src="src/js/main.js"></script>
+<script src="src/js/routing.js"></script>
+<script src="src/js/controllers/TautvydasController.js"></script>
+<script src="src/js/controllers/JustoController.js"></script>
 
 </body>
 </html>

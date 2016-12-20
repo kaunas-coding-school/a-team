@@ -1,3 +1,6 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
 body {
     background-color: powderblue;
     height: 100%;
@@ -6,7 +9,7 @@ body {
     margin: 0;
 }
 
-ul {
+.meniu {
     list-style: none;
     background-color: #003345;
     width: 100%;
@@ -18,20 +21,16 @@ ul {
     box-shadow: 0 0 15px 5px black;
 }
 
-li {
+.meniu li {
     float: left;
     padding: 10px;
 }
 
-li:hover {
+.meniu li:hover {
     background-color: #3485ff;
 }
 
-li a {
+.meniu li a {
     text-decoration: none;
     color: white;
-}
-
-.wraper {
-    margin: 50px 10px 100px;
 }

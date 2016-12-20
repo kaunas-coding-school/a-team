@@ -1,221 +1,223 @@
-<!DOCTYPE html>
-<html ng-app>
-<head>
-    <meta charset="UTF-8"/>
-    <title>Pavadinimas</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="stylesheet" href="src/css/justas.css">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
-
-    <script src='src/js/angular.min.js' type='application/javascript'></script>
-    <script src="src/js/justo.js"></script>
-
-
-</head>
-<body>
-<nav>
-    <ul>
-        <li><a href="index.html" title="">PRADZIA</a></li>
-        <li><a href="AgneAmbrasaite.html" title="">Agne</a></li>
-        <li><a href="Arnas.html" title="">Arnas</a></li>
-        <li><a href="ArnasJ.html" title="">ArnasJ</a></li>
-        <li><a href="DeividasPetkevicius.html" title="">DeividasP2</a></li>
-        <li><a href="justas.html" title="">Justas</a></li>
-        <li><a href="LukasGudonis.html" title="">Lukas</a></li>
-        <li><a href="zygis.html" title="">Zygimantas</a></li>
-    </ul>
-</nav>
-<div class="main">
-    <div class="headingbackground">
-    <h1>
-        JUSTAS WEBPAGE
-    </h1>
-    </div>
-    <!-- Split button -->
-    <div class="btn-group">
-        <button type="button" class="btn btn-danger">Action</button>
-        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-            <span class="caret"></span>
-            <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+<div class="justo" ng-controller="JustasMaumevicius as jm">
+    <nav>
+        <ul>
+            <li><a href="index.html" title="">PRADZIA</a></li>
+            <li><a href="AgneAmbrasaite.html" title="">Agne</a></li>
+            <li><a href="Arnas.html" title="">Arnas</a></li>
+            <li><a href="ArnasJ.html" title="">ArnasJ</a></li>
+            <li><a href="DeividasPetkevicius.html" title="">DeividasP2</a></li>
+            <li><a href="justas.html" title="">Justas</a></li>
+            <li><a href="LukasGudonis.html" title="">Lukas</a></li>
+            <li><a href="zygis.html" title="">Zygimantas</a></li>
         </ul>
-    </div>
-    <form action="action_page.php">
-        First name:{{vardas}}<br>
-        <input ng-model="vardas" type="text" name="firstname"><br>
-        Last name:{{pavarde}}<br>
-        <input ng-model="pavarde" type="text" name="lastname"><br><br>
-        <input type="submit" value="Submit">
-    </form>
-    <h2 class="heading1"> The very first web page</h2>
-    <img class="lektuvas" alt="lektuvas"
-         src="http://cdn.airplane-pictures.net/images/uploaded-images/2015/5/10/560195.jpg" id="foto"/>
-    <center>
-        <button type="button" onclick="alert('PLANE!')">Click Me!</button>
-    </center>
 
-    <div class="row">
-        <div class="col-md-12 col-xs-6">
-            <p>
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                there live the blind
-                texts.
-                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-            </p>
+    </nav>
+    <div class="main">
+        <div class="headingbackground">
+            <h1>
+                JUSTAS WEBPAGE
+            </h1>
         </div>
-        <div class="col-md-12">
-            <div class="col-md-6">
-                <p>
-                    Even the all-powerful Pointing has no control about the blind texts it is an almost
-                    unorthographic life One day
-                    however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of
-                    Grammar.
+
+        <!-- Split button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">Action</button>
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div ng-view></div>
+        <form action="action_page.php">
+            First name:{{jm.vardas}}<br>
+            <input ng-model="jm.vardas" type="text" name="firstname"><br>
+            Last name:{{jm.pavarde}}<br>
+            <input ng-bind="jm.vardas" type="text" name="lastname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <h2 class="heading1"> The very first web page {{jm.kintamasis}}</h2>
+        <img class="lektuvas" alt="lektuvas"
+             src="http://cdn.airplane-pictures.net/images/uploaded-images/2015/5/10/560195.jpg" id="foto"/>
+        <center>
+            <button type="button" onclick="alert('PLANE!')">Click Me!</button>
+        </center>
+
+        <div class="row">
+
+            <div class="col-md-12 col-xs-6">
+                <p ng-hide="jm.parl">
+                    <button id="slepti" ng-click="jm.parl=true">HIDE</button>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind
+                    texts.
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
                 </p>
             </div>
-            <div class="col-md-6">
-                <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <p>
+
+                        Even the all-powerful Pointing has no control about the blind texts it is an almost
+                        unorthographic life One day
+                        however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World
+                        of
+                        Grammar.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question
+                        Marks
+                        and
+                        devious Semikoli, but the Little Blind Text didn’t listen.</p>
+                    <div class="col-md-12">
+                        <p>
+                            She packed her seven versalia, put her initial into the belt and made herself on the way.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <p>
+                    <div class="col-md-6 col-xs-6">
+                <p>
+                    When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of
+                    her
+                    hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line
+                    Lane.
+                    Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a
+                    copy.
+                    The
+                    copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand
+                    times
+                    and
+                    everything that was left from its origin would be the word "and" and the Little Blind Text should
+                    turn
+                    around
+                    and return to its own, safe country.
+                    But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy
+                    Writers
+                    ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they
+                    abused
+                    her
+                    for
+                    their projects again and again.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-6">
+                <p>And if she hasn’t been rewritten, then they are still using her.
+
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the
+                    blind
+                    texts.
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                    Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
+                    life
+                    One
+                    day
+                    however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of
+                    Grammar.
+                    The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question
                     Marks
                     and
-                    devious Semikoli, but the Little Blind Text didn’t listen.</p>
-                <div class="col-md-12">
+                    devious Semikoli, but the Little Blind Text didn’t listen.
+                    She packed her seven versalia, put her initial into the belt and made herself on the way.
+                    When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of
+                    her
+                    hometown Bookmarksgrove, the headline of Alphabet Village and the subline.
+                </p>
+                <div class="col-md-6 col-xs-6">
                     <p>
-                        She packed her seven versalia, put her initial into the belt and made herself on the way.
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was
+                        born and I
+                        will give you a complete account of the system, and expound the actual teachings of the great
+                        explorer of
+                        the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure
+                        itself,
+                        because it is pleasure, but because those who do not know how to pursue pleasure rationally
+                        encounter
+                        consequences that are extremely painful.
+                        Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it
+                        is
+                        pain, but
+                        because occasionally circumstances occur in which toil and pain can procure him some great
+                        pleasure.
+                        To take
+                        a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
+                        some
+                        advantage
+                        from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
+                        no
+                        annoying
+                        consequences, or one who avoids a pain that produces no resultant pleasure?
                     </p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-4">
-            <p>
-                <div class="col-md-6 col-xs-6">
-            <p>
-                When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her
-                hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line
-                Lane.
-                Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
-                The
-                copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times
-                and
-                everything that was left from its origin would be the word "and" and the Little Blind Text should turn
-                around
-                and return to its own, safe country.
-                But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy
-                Writers
-                ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused
-                her
-                for
-                their projects again and again.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 col-xs-6">
-            <p>And if she hasn’t been rewritten, then they are still using her.
-
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind
-                texts.
-                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life
-                One
-                day
-                however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of
-                Grammar.
-                The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks
-                and
-                devious Semikoli, but the Little Blind Text didn’t listen.
-                She packed her seven versalia, put her initial into the belt and made herself on the way.
-                When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her
-                hometown Bookmarksgrove, the headline of Alphabet Village and the subline.
-            </p>
-            <div class="col-md-6 col-xs-6">
-                <p>
-                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born and I
-                    will give you a complete account of the system, and expound the actual teachings of the great
-                    explorer of
-                    the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure
-                    itself,
-                    because it is pleasure, but because those who do not know how to pursue pleasure rationally
-                    encounter
-                    consequences that are extremely painful.
-                    Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is
-                    pain, but
-                    because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
-                    To take
-                    a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some
-                    advantage
-                    from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no
-                    annoying
-                    consequences, or one who avoids a pain that produces no resultant pleasure?
-                </p>
+        <div class="test">
+            <div class="desine">
+                <form class="selection" action="action_page.php">
+                    <input type="text" placeholder="Insert country">
+                    <br>
+                    <select name="City">
+                        <option value="Choose city">Choose city</option>
+                        <option value="Kaunas">Kaunas</option>
+                        <option value="Vilnius">Vilnius</option>
+                        <option value="Klaipeda">Klaipeda</option>
+                        <option value="Moletai">Moletai</option>
+                    </select>
+                    <br><br>
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="desine">
+                <form>
+                    <textarea placeholder="Atsiliepimai" rows="5" cols="20"></textarea>
+                    <br>
+                    <input type="submit">
+                </form>
             </div>
         </div>
     </div>
-    <div class="test">
-        <div class="desine">
-            <form class="selection" action="action_page.php">
-                <input type="text" placeholder="Insert country">
-                <br>
-                <select name="City">
-                    <option value="Choose city">Choose city</option>
-                    <option value="Kaunas">Kaunas</option>
-                    <option value="Vilnius">Vilnius</option>
-                    <option value="Klaipeda">Klaipeda</option>
-                    <option value="Moletai">Moletai</option>
-                </select>
-                <br><br>
-                <input type="submit">
-            </form>
-        </div>
-        <div class="desine">
-            <form>
-                <textarea placeholder="Atsiliepimai" rows="5" cols="20"></textarea>
-                <br>
-                <input type="submit">
-            </form>
-        </div>
-    </div>
+    <footer class="footer">
+        <center><a style="text-align:center;" href="www.google.lt">Nuoroda i tinklalapi</a></center>
+        <br/>
+        <center><a class="link" href=" zygis.html">VISIT PAGE</a></center>
+        <i class="fa fa-pinterest" aria-hidden="true"></i>
+    </footer>
+
+
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script>
+        $('#foto').click(function () {
+            /*alert('Paspaudziau!')*/ //paspaudus ant nuotraukos ismeta lentele
+            $(this).css('display', 'none'); //paspaudus pradangina paveiksleli
+
+        })
+    </script>
 </div>
-<footer class="footer">
-    <center><a style="text-align:center;" href="www.google.lt">Nuoroda i tinklalapi</a></center>
-    <br/>
-    <center><a class="link" href=" zygis.html">VISIT PAGE</a></center>
-    <i class="fa fa-pinterest" aria-hidden="true"></i>
-</footer>
-
-
-<script src="http://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
-</script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-<script>
-    $('#foto').click(function () {
-        /*alert('Paspaudziau!')*/ //paspaudus ant nuotraukos ismeta lentele
-        $(this).css('display', 'none'); //paspaudus pradangina paveiksleli
-
-    })
-</script>
 </body>
 </html>

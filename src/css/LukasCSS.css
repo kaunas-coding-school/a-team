@@ -12,7 +12,6 @@ h1 {
 p {
     color: cornsilk;
 
-
 }
 
 h2 {
@@ -31,18 +30,6 @@ a.button {
 
     text-decoration: none;
     color: initial;
-}
-
-
-
-
-
-.left_side {
-    background-color: darkkhaki;
-}
-
-.right_side {
-    background-color: darkslategrey;
 }
 
 input[type=text] {
