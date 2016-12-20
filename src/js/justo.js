@@ -1,7 +1,8 @@
 /**
  * Created by justas5 on 16/12/16.
  */
-angular.module('App', []).controller('JustasMaumevicius', function(){
+
+    app.controller('JustasMaumevicius', function(){
 
     var jm = this;
     jm.kintamasis = 'Labas';
@@ -9,7 +10,10 @@ angular.module('App', []).controller('JustasMaumevicius', function(){
     jm.vardas = 'Jonas';
     jm.pavarde = 'Jonaitis';
 
+    jm.parl = false;
 
+
+    jm.masyvas = ['vienas', 'du', 'trys', 'keturi', '...'];
 
 
 });
