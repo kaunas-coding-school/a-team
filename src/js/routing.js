@@ -6,13 +6,13 @@ app.config(function ($routeProvider) {
         .when("/", {
             templateUrl: "tautvydas.html"
         })
-        .when("/red", {
-            templateUrl: "red.htm"
+        .when("/Justas", {
+            templateUrl: "justas.html"
         })
-        .when("/green", {
-            templateUrl: "green.htm"
+        .when("/Deividas", {
+            templateUrl: "DeividasPetkevicius.html"
         })
-        .when("/blue", {
-            templateUrl: "blue.htm"
+        .when("/test", {
+            templateUrl: "test.html"
         });
 });
