@@ -10,6 +10,7 @@ body {
 }
 
 .meniu {
+    z-index: 999;
     list-style: none;
     background-color: #003345;
     width: 100%;

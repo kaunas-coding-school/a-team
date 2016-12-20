@@ -2,6 +2,8 @@
 <html ng-app="musuAplikacija">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+
     <title>Pirmas puslapis</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -13,17 +15,36 @@
     <link rel="stylesheet" href="src/css/tautvydas.css" type="text/css"/>
 
 </head>
-<body ng-cloak>
+<body ng-cloak ng-controller="MainController as mc">
+<header>
+    <nav>
+        <ul class="meniu">
+            <li ng-repeat="item in mc.meniuMasyvas">
+                <a href="{{item.url}}" title="{{item.title}}">{{item.title}}</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-<ng-view></ng-view>
+<h1 class="container"><span ng-bind="mc.vardas">xxxxxxx</span> puslapis</h1>
+<div class="ng-view"></div>
 
-<script src="src/js/angular.min.js" type="application/javascript"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+    </div>
+</footer>
 
-<script src="src/js/main.js"></script>
-<script src="src/js/routing.js"></script>
-<script src="src/js/controllers/TautvydasController.js"></script>
-<script src="src/js/controllers/JustoController.js"></script>
+
+<script src="https://code.angularjs.org/1.6.0/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.6.0/angular-route.min.js"></script>
+
+<script src="src/js/applikacija.js" type="application/javascript"></script>
+<script src="src/js/routing.js" type="application/javascript"></script>
+<script src="src/js/controllers/MainController.js" type="application/javascript"></script>
+
+<script src="src/js/controllers/JustoController.js" type="application/javascript"></script>
+<script src="src/js/controllers/DeividasController.js" type="application/javascript"></script>
 
 </body>
 </html>

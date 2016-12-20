@@ -1,15 +1,8 @@
-/**
- * Created by LenovoUser on 12/20/2016.
- */
-app.controller('TautvydasDulskisController', function () {
+app.controller("TautvydasController", function () {
     /* jshint validthis: true */
     var vm = this;
-    vm.txt.testas = 'Vardas';
-    vm.txt.vardas = 'Jonas';
-    vm.par1 = true;
 
-    vm.masyvas = ['vienas', 'du', 'trys', 'keturi', '...'];
-
+    vm.title = 'Tautvydas';
     vm.meniuMasyvas = [
         {'url': 'index.html', 'title': 'Pradzia'},
         {'url': 'AgneAmbrasaite.html', 'title': 'Agne'},
