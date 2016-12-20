@@ -1,12 +1,14 @@
-/**
- * Created by Zygis on 2016-12-16.
- */
 
-angular.module('App', []).controller('ZygimantasKatkevicius', function(){
+
+app.controller('ZygimantasKatkevicius', function(){
 
 
     var zk = this;
 // zk.kintamasis = 'trys keturios raides'
 zk.vardas='Jonas';
-zk.pavarde="Petraitis"
-})
+zk.pavarde="Petraitis";
+zk.par=false;
+
+zk.masyvas = ['vienas', 'du', 'trys', 'keturi', '...'];
+
+});
