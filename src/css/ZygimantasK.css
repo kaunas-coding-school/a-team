@@ -1,0 +1,166 @@
+body {
+    min-height: 100%;
+    font-family: Calibri;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.grouponcdn.com/deal/5EXVDNMDEe1mtyEK6Pgp/ZC-1057x634/v1/c700x420.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.pagrindinis {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.paragrafas {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 120%;
+    color: azure;
+    max-width: 100ch;
+    position: relative;
+
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    font-family: Calibri;
+    font-weight: 500;
+    color: #3485ff;
+    margin-top:50px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid azure;
+    border-radius: 25px;
+    width:37%;
+}
+
+.w3:link {
+    text-decoration: none;
+    font-size: 100%;
+    color: azure;
+    transition: font-weight 0.5s, color 0.5s, font-size 0.5s, border 0.5s;
+    margin: 0 auto;
+    border-bottom: 1px solid transparent;
+}
+
+.w3:hover {
+    font-weight: 200;
+    color: azure;
+    font-size: 200%;
+    border-bottom: 1px solid
+}
+
+.w3 {
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+.left, right {
+    float: left;
+    width: 50%;
+}
+
+.left {
+    background-color: #690f0f;
+}
+
+.right {
+    background-color: #339103;
+}
+
+.imegas img {
+
+    width: 25%;
+    transition: width 0.5s;
+    margin-bottom: 15px;
+    min-width: 150px;
+}
+
+.imegas img:hover {
+    width: 30%;
+}
+
+.second {
+    color: azure;
+    height: 430px;
+    width: 100%;
+    position: relative;
+}
+
+.one {
+    margin-top: 15px;
+    width: 95%;
+    float: left;
+    text-align: center;
+    /*height: 550px;*/
+}
+
+.two {
+    margin-top: 15px;
+    width: 95%;
+    float: right;
+    text-align: center;
+    /*height: 550px;*/
+}
+
+.form {
+    color: azure;
+    margin-left:30px;
+}
+
+form input{
+    color:black;
+}
+
+.question {
+    margin-bottom: 20px;
+    margin-right: 60px;
+    float: left;
+}
+
+.grido_bandymas {
+    text-align: center;
+    max-width: 150ch;
+    margin: 0 auto;
+    width: 100%;
+    color: azure;
+}
+
+.grido_bandymas p {
+    margin-top: 10px;
+}
+
+.grido_bandymas img {
+    width: 50%;
+
+}
+
+.text-area {
+    color: black;
+    margin-left: 60px;
+}
+
+.headagain {
+    margin-bottom: 30px;
+}
+
+
+ul{
+    z-index: 5;
+}
+
+.vardasPavarde{
+    float: left;
+    margin-right: 50px;
+}
+#but{
+    margin-top:5px;
+}

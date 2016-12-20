@@ -1,0 +1,55 @@
+.pavadinimas {
+    text-align: right;
+    text-emphasis-color: aqua;
+    padding-top: 45px;
+    background-color: black;
+    color: white;
+
+
+}
+body {
+    background-color: white;
+    font-family: "Arial";
+}
+.eilerastis {
+    color: darkblue;
+    text-align: center;
+    font-size: larger;
+    background-color: white   ;
+    border: none;
+}
+.meniu {
+    list-style: none;
+    background-color: #003345;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+li {
+    float: left;
+    padding:10px ;
+
+}
+li:hover {
+    background-color: lightblue;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+.forma{
+   margin:  2%;
+}
+.row   {
+    text-align: justify;
+}
+.paveikslelis{
+    width: 100%;
+}
+.grincas  {
+    width: 100%;
+}
