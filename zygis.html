@@ -19,12 +19,14 @@
     <link rel="stylesheet" href="src/css/ZygimantasK.css">
 
 
+
     <script src="src\js\angular.min.js" type="application/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
     <script src="src/js/zkjs.js"></script>
 
 
-
 </head>
+
 <body>
 <div class="pagrindinisZK" ng-controller="ZygimantasKatkevicius as zk">
 
@@ -57,15 +59,25 @@
             </div>
         </div>
 
-        <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do
-            not
-            know
-            how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is
-            there
-            anyone
-            who loves or pursues or desires to obtain pain of itself, because it is pain, but because
-            occasionally
-            circumstances occur in which toil and pain can procure him some great pleasure.</p>
+
+        <ul>
+            <li ng-repeat="dalykas in zk.masyvas">{{dalykas}}</li>
+        </ul>
+
+
+        <button id="slepti" ng-click="zk.par=true">HIDE</button>
+
+
+        <p ng-hide="zk.par">
+        No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do
+        not
+        know
+        how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is
+        there
+        anyone
+        who loves or pursues or desires to obtain pain of itself, because it is pain, but because
+        occasionally
+        circumstances occur in which toil and pain can procure him some great pleasure.</p>
 
         <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
             some
@@ -80,7 +92,7 @@
             charms of
             pleasure of the moment, so blinded by desire, that they cannot foresee </p>
         <a class="w3" href="http://www.w3schools.com/" target="_blank">Nuoroda i W3</a>
-        </div>
+    </div>
 
 
     <hr/>
@@ -155,7 +167,7 @@
 
         <form action="/servlet" method="post" class="vardasPavarde">
             Vardas:{{zk.vardas}}<br/>
-            <input ng-model="zk.vardas" type="text" id = "vardas" name="vardas" value=""><br>
+            <input ng-model="zk.vardas" type="text" id="vardas" name="vardas" value=""><br>
             Pavarde:{{zk.pavarde}}<br/>
             <input ng-model="zk.pavarde" type="text" name="pavarde" value=""><br>
             <input type="submit" value="Submit" id="but">
@@ -163,7 +175,7 @@
 
 
         <form class="text-area">
-                    <textarea  id="pakeist" name="about me" rows="10" cols="50"
+                    <textarea id="pakeist" name="about me" rows="10" cols="50"
                               placeholder="Trumpai papasakokite apie save"></textarea>
             <input class="button" type="submit" value="Čia aš">
         </form>
@@ -177,7 +189,8 @@
         <h2 class="headagain">Nedidelis headline'as</h2>
         <div class="row">
             <div class="col-md-4">
-                <img src="https://academy.zenva.com/wp-content/uploads/2014/08/Bootstrap-3.jpg" alt="bootstrap" id="foto"/>
+                <img src="https://academy.zenva.com/wp-content/uploads/2014/08/Bootstrap-3.jpg" alt="bootstrap"
+                     id="foto"/>
 
                 <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced
                     by fox
@@ -190,7 +203,13 @@
             </div>
 
             <div class="col-md-4">
-                <button type="button" class="btn btn-primary btn-lg btn-block" id="mygtukas">Kas įvyks paspaudus šį mygtuką?</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="mygtukas">Kas įvyks paspaudus šį
+                    mygtuką?
+                </button>
+
+
+                <div ng-view></div>
+
 
                 <p>Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack! "
                     my
@@ -222,42 +241,38 @@
             </div>
 
             <div class="col-md-12">
-            <a href="https://www.youtube.com/" type="button" target="blank" class="btn btn-default btn-lg btn-block">Išeiti</a>
+                <a href="https://www.youtube.com/" type="button" target="blank"
+                   class="btn btn-default btn-lg btn-block">Išeiti</a>
             </div>
 
         </div>
     </div>
 
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
 
 
-
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
-
-
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-
-
-<script>
-    $('#foto').click(function(){
+    <script>
+        $('#foto').click(function () {
 //        alert('KAS IVYKO?!?!');
-        $('#pakeist').val('NIEKO NEBELIKO');
-    });
+            $('#pakeist').val('NIEKO NEBELIKO');
+        });
 
 
-    $('#mygtukas').click(function(){
-        alert('VISISKAI NIEKO!');
-    });
+        $('#mygtukas').click(function () {
+            alert('VISISKAI NIEKO!');
+        });
 
 
-</script>
+    </script>
 
 
 </div>
